@@ -1,20 +1,22 @@
+
 package sqlconexion;
 
-public class Usuario
-{
 
+public class UsuarioPrivilegiado
+{
+    
     private int id;
     public String username;
-    public String email;
+    public String role;
     public String password;
-
-    public Usuario(String username, String email, String password)
+ 
+    public UsuarioPrivilegiado(String username, String role, String password)
     {
         this.username = username;
-        this.email = email;
+        this.role = role;
         this.password = password;
     }
-
+    
     public void setId(int id)
     {
         this.id = id;
@@ -25,9 +27,9 @@ public class Usuario
         this.username = username;
     }
 
-    public void setEmail(String email)
+    public void setRole(String role)
     {
-        this.email = email;
+        this.role = role;
     }
 
     public void setPassword(String password)
@@ -45,13 +47,14 @@ public class Usuario
         return username;
     }
 
-    public String getEmail()
+    public String getRole()
     {
-        return email;
+        return role;
     }
 
     public String getPassword()
     {
         return password;
     }
+
 }

@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class ConexionMySQL {
         /* 
     *  Puedes poner los espacios como '%20' o como '+' si da problemas
-    *  Por ejemplo: si tu base de datos se llama
+    *  Por ejemplo: si tu base de datos se llama:
     *  Mi empresa BD -> lo puedes poner así -> Mi%20empresa%20BD o Mi+empresa+BD :)
     */
     private static final String URL = "jdbc:mysql://localhost:3306/javaconsql"; 
