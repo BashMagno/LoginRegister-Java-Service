@@ -7,3 +7,7 @@ También iré mejorando el diseño la interfaz, de momento esta feillo. :)
 Login and register service, made in Java allowing connection with MySQL through the service jdbc.
 Made by me, i will be commenting the code soon just so it is easier to understand.
 i will upgrading the design of the interface as well since now it´s ugly. :)
+
+<hr>
+
+
