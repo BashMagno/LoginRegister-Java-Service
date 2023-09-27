@@ -10,9 +10,9 @@ public class ConexionMySQL {
     *  Por ejemplo: si tu base de datos se llama:
     *  Mi empresa BD -> lo puedes poner así -> Mi%20empresa%20BD o Mi+empresa+BD :)
     */
-    private static final String URL = "jdbc:mysql://localhost:3306/javaconsql"; 
-    private static final String USUARIO = "Alex";
-    private static final String CONTRASEÑA = "123123";
+    private static final String URL = "jdbc:mysql://localhost:3306/nombre_base_datos"; 
+    private static final String USUARIO = "user";
+    private static final String CONTRASEÑA = "pass";
 
     public static Connection obtenerConexion() {
         Connection conexion = null;
