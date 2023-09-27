@@ -10,6 +10,6 @@ i will upgrading the design of the interface as well since now it´s ugly. :)
 
 <hr>
 
-![Image text](>https://github.com/BashMagno/LoginRegister-Java-Service/blob/main/Login.png)
-![Image text](>https://github.com/BashMagno/LoginRegister-Java-Service/blob/main/registro.png)
+![Image text](https://github.com/BashMagno/LoginRegister-Java-Service/blob/main/Login.png)
+![Image text](https://github.com/BashMagno/LoginRegister-Java-Service/blob/main/registro.png)
 
