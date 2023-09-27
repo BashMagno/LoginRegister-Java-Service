@@ -199,9 +199,9 @@ public class RegistroFrame extends javax.swing.JFrame
         String username, email, password;
         username = usernameLabel.getText();
          int carUsername = alexlib.contarCaracteres(username);
-        if (carUsername > 10 )
+        if (carUsername > 24 )
             {
-                errorLabel.setText("El nombre de usuario no puede contener más de 10 caracteres");
+                errorLabel.setText("El nombre de usuario no puede contener más de 24 caracteres");
             }
             else if (carUsername <= 3)
             {
