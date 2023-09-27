@@ -9,5 +9,6 @@ Made by me, i will be commenting the code soon just so it is easier to understan
 i will upgrading the design of the interface as well since now it´s ugly. :)
 
 <hr>
+<span>![</span><span>Login imagen</span><span>]</span><span>(</span><span>https://raw.githubusercontent.com/BashMagno/LoginRegister-Java-Service/blob/main/Login.png</span><span>)</span>
 
-
+<span>![</span><span>Login imagen</span><span>]</span><span>(</span><span>https://raw.githubusercontent.com/BashMagno/LoginRegister-Java-Service/blob/main/registro.png</span><span>)</span>
