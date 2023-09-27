@@ -64,21 +64,21 @@ public class RegistroFrame extends javax.swing.JFrame
 
         errorLabel.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
 
-        emailLabel.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
+        emailLabel.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         emailLabel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 emailLabelActionPerformed(evt);
             }
         });
 
-        usernameLabel.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
+        usernameLabel.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         usernameLabel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 usernameLabelActionPerformed(evt);
             }
         });
 
-        passwordLabel.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
+        passwordLabel.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         passwordLabel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 passwordLabelActionPerformed(evt);
@@ -109,36 +109,30 @@ public class RegistroFrame extends javax.swing.JFrame
                 .addGap(54, 54, 54)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addComponent(errorLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 634, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(errorLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 634, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 11, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel3)
                             .addComponent(jLabel4)
                             .addComponent(btnVolverLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(emailLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 315, Short.MAX_VALUE)
-                                    .addComponent(passwordLabel)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(21, 21, 21)
+                        .addGap(21, 21, 21)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(emailLabel)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addComponent(btnRegistro, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btnLimpiar)))))
+                                .addComponent(btnLimpiar))
+                            .addComponent(passwordLabel)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addGap(81, 81, 81)
+                        .addComponent(usernameLabel)))
                 .addGap(57, 57, 57))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(133, 133, 133))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(383, 383, 383)
-                    .addComponent(usernameLabel)
-                    .addGap(58, 58, 58)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -146,7 +140,9 @@ public class RegistroFrame extends javax.swing.JFrame
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addGap(98, 98, 98)
-                .addComponent(jLabel2)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(usernameLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(61, 61, 61)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
@@ -155,19 +151,15 @@ public class RegistroFrame extends javax.swing.JFrame
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(passwordLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnVolverLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnRegistro, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 70, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnLimpiar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(btnVolverLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnRegistro, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addComponent(errorLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(79, 79, 79))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(172, 172, 172)
-                    .addComponent(usernameLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(523, Short.MAX_VALUE)))
         );
 
         pack();
@@ -181,7 +173,6 @@ public class RegistroFrame extends javax.swing.JFrame
         {
             
             dispose();
-            Thread.sleep(1500);
             InicioSesionFrame loginFrame = new InicioSesionFrame();
             loginFrame.setVisible(true);
             
@@ -207,21 +198,35 @@ public class RegistroFrame extends javax.swing.JFrame
         
         String username, email, password;
         username = usernameLabel.getText();
-        email = emailLabel.getText();
-        password = passwordLabel.getText();
-        password = alexlib.encriptarMD5(password);
-        
-        Usuario nuevoUsuario = new Usuario(username, email, password);
-        boolean registroExitoso = RegistroService.registrar(nuevoUsuario);
-        
-        if (registroExitoso) {
-            System.out.println("Registro exitoso.");
-            errorLabel.setText("Registro existoso, Bienvenido "+ username);
-        } else {
-            System.out.println("Error al registrar usuario.");
-            errorLabel.setText("Registro fallido: este nombre de usuario ya está en uso");
-        }
+         int carUsername = alexlib.contarCaracteres(username);
+        if (carUsername > 10 )
+            {
+                errorLabel.setText("El nombre de usuario no puede contener más de 10 caracteres");
+            }
+            else if (carUsername <= 3)
+            {
+                errorLabel.setText("El nombre de usuario tiene que tener al menos 4 caracteres");
+            }
+            else
+            {
+            email = emailLabel.getText();
+            password = passwordLabel.getText();
+            password = alexlib.encriptarMD5(password);
 
+            Usuario nuevoUsuario = new Usuario(username, email, password);
+            boolean registroExitoso = RegistroService.registrar(nuevoUsuario);
+
+            if (registroExitoso) 
+            {
+                System.out.println("Registro exitoso.");
+                errorLabel.setText("Registro existoso, Bienvenido "+ username);
+            }
+            else 
+            {
+                System.out.println("Error al registrar usuario.");
+                errorLabel.setText("Registro fallido: este nombre de usuario ya está en uso");
+            }
+        }
     }//GEN-LAST:event_btnRegistroActionPerformed
 
     private void usernameLabelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usernameLabelActionPerformed

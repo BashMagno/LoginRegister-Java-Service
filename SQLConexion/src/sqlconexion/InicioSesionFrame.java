@@ -234,7 +234,6 @@ public class InicioSesionFrame extends javax.swing.JFrame
         // TODO add your handling code here:
         try 
         {
-            Thread.sleep(1500);
             dispose();
             RegistroFrame regFrame = new RegistroFrame();
             regFrame.setVisible(true);
